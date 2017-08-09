@@ -59,3 +59,4 @@ typings/
 
 #back dir added for ignore downloaded backend
 back/*
+back/
