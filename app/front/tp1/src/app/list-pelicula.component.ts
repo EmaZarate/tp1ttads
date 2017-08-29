@@ -14,8 +14,8 @@ export class ListPelicula {
     this.peliculas[1].title= "pelicula 2";
     this.peliculas[1].id=2;
     this.peliculas[2].title= "pelicula 3";
-    this.peliculas[2].id=2;
+    this.peliculas[2].id=3;
     this.peliculas[3].title= "pelicula 4";
-    this.peliculas[3].id=2;
+    this.peliculas[3].id=4;
   }
 }

@@ -1,14 +1,3 @@
 
 <h3>Top Movies</h3>
-<div class="col-md-3 col-sm-6">
-  <a href="#">{{peliculas[0].title}}</a>
-</div>
-<div class="col-md-3 col-sm-6">
-  <a href="#">{{peliculas[1].title}}</a>
-</div>
-<div class="col-md-3 col-sm-6">
-  <a href="#">{{peliculas[2].title}}</a>
-</div>
-<div class="col-md-3 col-sm-6">
-  <a href="#">{{peliculas[3].title}}</a>
-</div>
+<a *ngFor="let pelicula of peliculas" [routerLink]="['/detail', pelicula.id]" >{{pelicula.title}}</a>

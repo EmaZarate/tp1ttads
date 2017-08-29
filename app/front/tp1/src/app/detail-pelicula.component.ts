@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,Input,OnInit} from '@angular/core';
 import { Pelicula} from './pelicula';
 import { ActivatedRoute, ParamMap } from '@angular/router';
 @Component({
@@ -7,5 +7,5 @@ import { ActivatedRoute, ParamMap } from '@angular/router';
   styleUrls: ['./detail-pelicula.component.css']
 })
 export class DetailPelicula {
-
+  @Input() pelicula: Pelicula;
 }
