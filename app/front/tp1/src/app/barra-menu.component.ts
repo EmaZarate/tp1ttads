@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, ParamMap } from '@angular/router';
+import { Pelicula} from './pelicula'
 
 @Component({
   selector: 'barra-menu',
@@ -6,5 +8,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./barra-menu.component.css']
 })
 export class BarraMenuComponent {
-  
+
+
 }

@@ -7,5 +7,14 @@ import { ActivatedRoute, ParamMap } from '@angular/router';
   styleUrls: ['./detail-pelicula.component.css']
 })
 export class DetailPelicula {
-  @Input() pelicula: Pelicula;
+  pelicula: Pelicula;
+
+  constructor(
+   private route: ActivatedRoute,
+   private location: Location
+ ) {}
+
+  ngOnInit(): void {
+    this.route.paramMap
+  }
 }
