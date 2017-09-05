@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, ParamMap } from '@angular/router';
-import { Pelicula} from './pelicula'
+
+
 
 @Component({
   selector: 'barra-menu',

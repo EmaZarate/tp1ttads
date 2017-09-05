@@ -6,7 +6,6 @@ import { ListPelicula }      from './list-pelicula.component';
 
 
 const routes: Routes = [
-  { path: '', redirectTo: '/list-pelicula', pathMatch: 'full' },
   { path: 'detail/:id', component: DetailPelicula },
   { path: 'list-peliculas',     component: ListPelicula }
 ];

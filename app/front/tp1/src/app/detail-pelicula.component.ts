@@ -9,12 +9,7 @@ import { ActivatedRoute, ParamMap } from '@angular/router';
 export class DetailPelicula {
   pelicula: Pelicula;
 
-  constructor(
-   private route: ActivatedRoute,
-   private location: Location
- ) {}
+  
 
-  ngOnInit(): void {
-    this.route.paramMap
-  }
+
 }
