@@ -9,7 +9,9 @@ import { ActivatedRoute, ParamMap } from '@angular/router';
 export class DetailPelicula {
   pelicula: Pelicula;
 
-  
+  constructor(){
+    
+  }
 
 
 }
