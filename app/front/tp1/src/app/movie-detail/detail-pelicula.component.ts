@@ -1,5 +1,5 @@
 import { Component,Input,OnInit} from '@angular/core';
-import { Pelicula} from './pelicula';
+import { Pelicula} from '../movie/pelicula';
 import { ActivatedRoute, ParamMap } from '@angular/router';
 @Component({
   selector: 'detail-pelicula',
@@ -10,7 +10,7 @@ export class DetailPelicula {
   pelicula: Pelicula;
 
   constructor(){
-    
+
   }
 
 

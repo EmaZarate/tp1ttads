@@ -5,11 +5,11 @@ import { HttpModule }    from '@angular/http';
 
 
 import { AppComponent } from './app.component';
-import { BarraMenuComponent } from './barra-menu.component';
-import { ListPelicula } from './list-pelicula.component';
-import { DetailPelicula } from './detail-pelicula.component';
+import { BarraMenuComponent } from './menu-bar/barra-menu.component';
+import { ListPelicula } from './movie-list/list-pelicula.component';
+import { DetailPelicula } from './movie-detail/detail-pelicula.component';
 import { AppRoutingModule }     from './app-routing.module';
-import { PeliculaService} from './pelicula.service';
+import { PeliculaService} from './movie/pelicula.service';
 
 @NgModule({
 
@@ -22,7 +22,7 @@ import { PeliculaService} from './pelicula.service';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    
+
   ],
   providers: [PeliculaService],
   bootstrap: [AppComponent]

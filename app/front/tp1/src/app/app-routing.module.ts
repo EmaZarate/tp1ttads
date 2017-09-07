@@ -1,8 +1,8 @@
 import { NgModule }             from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { DetailPelicula }   from './detail-pelicula.component';
-import { ListPelicula }      from './list-pelicula.component';
+import { DetailPelicula }   from './movie-detail/detail-pelicula.component';
+import { ListPelicula }      from './movie-list/list-pelicula.component';
 
 
 const routes: Routes = [
