@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Pelicula} from './pelicula';
+import { Pelicula} from '../movie/pelicula';
 
 @Component({
   selector: 'list-pelicula',
