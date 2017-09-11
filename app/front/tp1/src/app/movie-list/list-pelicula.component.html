@@ -1,4 +1,6 @@
 <div class="row">
 <h3>Top Movies</h3>
-<a *ngFor="let pelicula of peliculas" [routerLink]="['/detail']" >{{pelicula.title}}</a>
+<a *ngFor="let pelicula of peliculas" [routerLink]="['/detail', pelicula.id]" ><div class="col-md-3 col-sd-12">
+  <img src={{pelicula.img}} alt="">
+</div></a>
 </div>
