@@ -1,5 +1,5 @@
 export class Pelicula {
   id:number;
   title:string;
-  img:string;
+  poster_path:string;
 }
