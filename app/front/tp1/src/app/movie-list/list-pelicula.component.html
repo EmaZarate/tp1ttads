@@ -1,6 +1,6 @@
 <div class="row">
 <h3>Top Movies</h3>
-<a *ngFor="let pelicula of peliculas" [routerLink]="['/detail', pelicula.id]" ><div class="col-md-3 col-sd-12">
-  {{pelicula.id}}
+<a *ngFor="let any of peliculas" [routerLink]="['/detail', pelicula.id]" ><div class="col-md-3 col-sd-12">
+  {{any.id}}
 </div></a>
 </div>
