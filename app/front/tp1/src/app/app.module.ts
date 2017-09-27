@@ -22,6 +22,7 @@ import { PeliculaService} from './movie/pelicula.service';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpModule
 
   ],
   providers: [PeliculaService],
