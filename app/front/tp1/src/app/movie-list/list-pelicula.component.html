@@ -1,6 +1,9 @@
 <div class="row">
-<h3>Top Movies</h3>
-<a *ngFor="let pelicula of peliculas.results" [routerLink]="['/detail', pelicula.id]" ><div class="col-md-3 col-sd-12">
-  <img src="https://image.tmdb.org/t/p/w250_and_h141_bestv2{{pelicula.poster_path}}" alt=""> {{pelicula.id}}
-</div></a>
+ <h2>Top Movies</h2>
+  <a *ngFor="let pelicula of peliculas.results" [routerLink]="['/detail', pelicula.id]" >
+   <div class="col-md-3 col-sd-12">
+    <h2>{{pelicula.title}} {{pelicula.id}}</h2>
+    <img src="https://image.tmdb.org/t/p/w250_and_h141_bestv2{{pelicula.poster_path}}" alt="">
+   </div>
+  </a>
 </div>
