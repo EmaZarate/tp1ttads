@@ -1,9 +1,14 @@
 h3 {
   text-align: center;
 }
+<<<<<<< HEAD
 h2{
   text-align: center;
 }
 img{
   margin-bottom: 10px;
+=======
+img {
+  border-right: 10px;
+>>>>>>> d90c1fcf49fc0c33ed13ef70791c9ccda402506e
 }
