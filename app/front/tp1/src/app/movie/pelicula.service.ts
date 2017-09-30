@@ -20,6 +20,5 @@ import {Pelicula} from './pelicula';
   getMovie(id): Observable <any>{
     let Onemovie: string=this.oneMovie+id+"?api_key=f2d25e38d020b6e75e8fede7638fd12e&language=en-US";
     return this.http.get(Onemovie).map((res:Response) => res.json());
-
   }
  }

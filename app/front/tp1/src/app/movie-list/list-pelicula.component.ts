@@ -13,7 +13,7 @@ import { Subscription } from 'rxjs/Subscription';
 })
 export class ListPelicula  implements OnInit{
 
-  peliculas: any[];
+  peliculas: any;
 
   subscription: Subscription;
   constructor(private peliculaService:PeliculaService){

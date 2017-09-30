@@ -1,1 +1,11 @@
-<h1>Pelicula {{id}}</h1>
+<div class="row">
+  <div class="col-md-6 col-sd-12">
+    <img src="https://image.tmdb.org/t/p/w250_and_h141_bestv2{{pelicula.backdrop_path}}" alt="">
+  </div>
+  <div class="col-md-6 col-sd-12">
+    <h2>Sinopsis</h2>
+    <p>{{pelicula.overview}}</p>
+    <h2>Ranking</h2>
+    <p>{{pelicula.vote_average}}</p>
+  </div>
+</div>
