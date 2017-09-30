@@ -11,6 +11,7 @@ import {PeliculaService} from '../movie/pelicula.service';
 export class DetailPelicula implements OnInit{
   pelicula: any;
   id: number;
+  movieReviews: any;
   constructor(private route: ActivatedRoute, private service:PeliculaService) {}
 
   ngOnInit() {
@@ -19,10 +20,15 @@ export class DetailPelicula implements OnInit{
           // In a real app: dispatch action to load the details here.
          });
          this.getMovie(this.id);
+         this.getMovieReviews(this.id);
   }
 
    getMovie(id) {
      this.service.getMovie(id).subscribe(result => this.pelicula=result);
+   }
+
+   getMovieReviews(id){
+     this.service.getMovieReviews(id).subscribe(result => this.movieReviews=result);
    }
 
 }

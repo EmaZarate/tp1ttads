@@ -1,4 +1,7 @@
 <div class="row">
+  <h1>{{pelicula.title}}</h1>
+</div>
+<div class="row">
   <div class="col-md-6 col-sd-12">
     <img src="https://image.tmdb.org/t/p/w250_and_h141_bestv2{{pelicula.backdrop_path}}" alt="">
   </div>
@@ -7,5 +10,16 @@
     <p>{{pelicula.overview}}</p>
     <h2>Ranking</h2>
     <p>{{pelicula.vote_average}}</p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <h2>Comentarios</h2>
+    <ul>
+      <li *ngFor="let review of movieReviews.results">
+           <h3>{{review.author}}</h3>
+           <p>{{review.content}}</p>
+      </li>
+    </ul>
   </div>
 </div>
