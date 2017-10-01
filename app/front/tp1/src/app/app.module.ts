@@ -9,7 +9,7 @@ import { BarraMenuComponent } from './menu-bar/barra-menu.component';
 import { ListPelicula } from './movie-list/list-pelicula.component';
 import { DetailPelicula } from './movie-detail/detail-pelicula.component';
 import { AppRoutingModule }     from './app-routing.module';
-import { PeliculaService} from './movie/pelicula.service';
+import { PeliculaService} from './movie-service/pelicula.service';
 
 @NgModule({
 

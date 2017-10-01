@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Pelicula} from '../movie/pelicula';
-import {PeliculaService} from '../movie/pelicula.service';
-
+import {PeliculaService} from '../movie-service/pelicula.service';
 import { Observable }        from 'rxjs/Observable';
 import { Subscription } from 'rxjs/Subscription';
 
@@ -21,6 +19,6 @@ export class ListPelicula  implements OnInit{
   }
   ngOnInit(): void {
     this.peliculaService.getMovies().subscribe(results => this.peliculas = results);
-
+    
   }
 }

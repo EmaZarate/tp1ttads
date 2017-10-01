@@ -1,7 +1,6 @@
 import { Component,Input,OnInit} from '@angular/core';
-import { Pelicula} from '../movie/pelicula';
 import { ActivatedRoute, ParamMap } from '@angular/router';
-import {PeliculaService} from '../movie/pelicula.service';
+import {PeliculaService} from '../movie-service/pelicula.service';
 
 @Component({
   selector: 'detail-pelicula',
