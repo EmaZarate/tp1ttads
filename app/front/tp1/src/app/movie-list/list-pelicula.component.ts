@@ -19,6 +19,5 @@ export class ListPelicula  implements OnInit{
   }
   ngOnInit(): void {
     this.peliculaService.getMovies().subscribe(results => this.peliculas = results);
-
   }
 }
