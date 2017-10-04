@@ -18,7 +18,7 @@
 
       <form class="navbar-form navbar-right">
         <div class="form-group">
-          <input type="text" class="form-control" placeholder="Buscar pelicula" #searchBox (keyup)="search(searchBox.value)">
+          <input class="form-control" placeholder="Buscar pelicula" id="searchBox" #searchBox (keyup)="search(searchBox.value)">
         </div>
         <div *ngFor="let movie of movies.results | async"
          (click)="gotoDetail(movie.id)" class="search-result" >

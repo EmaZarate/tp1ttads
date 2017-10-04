@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import {PeliculaService} from '../movie-service/pelicula.service';
 import { Observable }        from 'rxjs/Observable';
 import { Subscription } from 'rxjs/Subscription';
@@ -10,8 +10,8 @@ import { Subscription } from 'rxjs/Subscription';
   styleUrls: ['./list-pelicula.component.css']
 })
 export class ListPelicula  implements OnInit{
+  peliculas:any;
 
-  peliculas: any;
 
   subscription: Subscription;
   constructor(private peliculaService:PeliculaService){
@@ -19,6 +19,6 @@ export class ListPelicula  implements OnInit{
   }
   ngOnInit(): void {
     this.peliculaService.getMovies().subscribe(results => this.peliculas = results);
-    
+
   }
 }
