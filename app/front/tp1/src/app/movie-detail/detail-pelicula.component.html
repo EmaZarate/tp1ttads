@@ -1,14 +1,15 @@
 <div class="row">
   <h1>{{pelicula.title}}</h1>
 </div>
+
 <div class="row">
   <div class="col-md-4 col-md-offset-2 col-sd-12">
-    <img src="https://image.tmdb.org/t/p/w250_and_h141_bestv2{{pelicula.backdrop_path}}" alt="">
+    <img src="https://image.tmdb.org/t/p/w250_and_h141_bestv2{{pelicula.backdrop_path}}" alt="" class="thumbnail">
   </div>
   <div class="col-md-4 col-sd-12">
-    <h2>Sinopsis</h2>
+    <h2><span class="label label-default">Sinopsis</span></h2>
     <p>{{pelicula.overview}}</p>
-    <h2>Ranking</h2>
+    <h2><span class="label label-default">Ranking</span></h2>
     <div class="rank"><p>{{pelicula.vote_average}}</p></div>
   </div>
 </div>

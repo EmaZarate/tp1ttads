@@ -9,10 +9,10 @@ img{
 
 a{
   color: rgb(0, 0, 0);
-
+  text-align: center;
 }
 p{
-  text-align: center;
+  
   font-size: medium;
   background-color: rgb(205, 205, 205);
 }

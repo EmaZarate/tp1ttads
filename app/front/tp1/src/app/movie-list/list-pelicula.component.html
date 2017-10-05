@@ -4,7 +4,7 @@
   <a *ngFor="let pelicula of peliculas.results" [routerLink]="['/detail', pelicula.id]" >
     <div class="col-md-3 col-sd-12">
       <p>{{pelicula.title}}</p>
-     <img src="https://image.tmdb.org/t/p/w250_and_h141_bestv2{{pelicula.poster_path}}" alt="">
+     <img src="https://image.tmdb.org/t/p/w250_and_h141_bestv2{{pelicula.poster_path}}" alt="" class="thumbnail">
     </div>
   </a>
 </div>
