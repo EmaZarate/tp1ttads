@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {PeliculaService} from '../movie-service/pelicula.service';
-import { Observable }        from 'rxjs/Observable';
-import { ActivatedRoute, ParamMap } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 
 
 @Component({
@@ -10,16 +8,15 @@ import { ActivatedRoute, ParamMap } from '@angular/router';
   styleUrls: ['./search-list.component.css']
 })
 export class SearchList  implements OnInit{
-  peliculas:any;
   movie:string
 
-  constructor(private peliculaService:PeliculaService,private router: ActivatedRoute){}
+  constructor(private router: ActivatedRoute){}
 
 ngOnInit(){
   this.router.params.subscribe(params => {
        this.movie = params['movie']; // (+) converts string 'id' to a number
           // In a real app: dispatch action to load the details here.
          });
-  this.peliculaService.getMoviesSearch(this.movie).subscribe(result => this.peliculas=result);
+
 }
 }

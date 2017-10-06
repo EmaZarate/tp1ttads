@@ -11,6 +11,7 @@ import { DetailPelicula } from './movie-detail/detail-pelicula.component';
 import { AppRoutingModule }     from './app-routing.module';
 import { PeliculaService} from './movie-service/pelicula.service';
 import {SearchList} from './search-list/search-list.component'
+import {ListMovies} from './list-movies/list-movies.component'
 
 @NgModule({
 
@@ -19,7 +20,8 @@ import {SearchList} from './search-list/search-list.component'
     BarraMenuComponent,
     ListPelicula,
     DetailPelicula,
-    SearchList
+    SearchList,
+    ListMovies
   ],
   imports: [
     BrowserModule,
