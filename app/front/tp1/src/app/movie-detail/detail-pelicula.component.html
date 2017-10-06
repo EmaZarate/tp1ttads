@@ -3,6 +3,7 @@
 </div>
 
 <div class="row">
+  <div class="fondo">
   <div class="col-md-4 col-md-offset-2 col-sd-12">
     <img src="https://image.tmdb.org/t/p/w250_and_h141_bestv2{{pelicula.backdrop_path}}" alt="" class="thumbnail">
   </div>
@@ -13,16 +14,16 @@
     <div class="rank"><p>{{pelicula.vote_average}}</p></div>
   </div>
 </div>
+</div>
 <div class="row">
   <div class="col-md-8 col-md-offset-2">
-    <div class="reviews">
-      <h2>Comentarios</h2>
-      <ul>
-        <li *ngFor="let review of movieReviews.results">
+    <div class="panel panel-primary">
+      <div class="panel-heading">Comentarios</div>
+          <div class="panel-body" *ngFor="let review of movieReviews.results">
            <h3>{{review.author}}</h3>
            <p>{{review.content}}</p>
-        </li>
-      </ul>
+           <hr>
+          </div>
     </div>
   </div>
 </div>
