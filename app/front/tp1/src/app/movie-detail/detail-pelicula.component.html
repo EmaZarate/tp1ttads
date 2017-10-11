@@ -12,6 +12,13 @@
     <p>{{pelicula.overview}}</p>
     <h2><span class="label label-default">Ranking</span></h2>
     <div class="rank"><p>{{pelicula.vote_average}}</p></div>
+    <div [class.rateHide]="voter">
+      <input type="text" #vote class="form-control">
+      <button class="btn btn-default" type="submit" (click)="Rate(vote.value)">Vote</button>
+    </div>
+      <div *ngIf="voter">
+      <div class="voteOk"><img src="/home/emanuel/Documentos/TTADS/Tp 1/tp1ttads/app/front/tp1/src/app/movie-detail/ok.png" alt=""><p>OK</p></div>
+      </div>
   </div>
 </div>
 </div>

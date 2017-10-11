@@ -11,6 +11,8 @@ export class DetailPelicula implements OnInit{
   pelicula: any;
   id: number;
   movieReviews: any;
+  voter:boolean=false;
+  session: any;
   constructor(private route: ActivatedRoute, private service:PeliculaService) {}
 
   ngOnInit() {
@@ -20,6 +22,8 @@ export class DetailPelicula implements OnInit{
          });
          this.getMovie(this.id);
          this.getMovieReviews(this.id);
+         this.service.getGuestSession().subscribe(result => this.session=result);
+
   }
 
    getMovie(id) {
@@ -28,6 +32,14 @@ export class DetailPelicula implements OnInit{
 
    getMovieReviews(id){
      this.service.getMovieReviews(id).subscribe(result => this.movieReviews=result);
+   }
+   Rate(vote){
+     let rateok:any;
+     this.service.rateMovie(this.session.guest_session_id,vote).subscribe(result => rateok=result);
+     //if(rateok.status_code===1){
+       this.voter=true;
+     //}
+
    }
 
 }

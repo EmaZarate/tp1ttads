@@ -19,3 +19,13 @@ h3{
 hr{
   border: 1px solid rgb(164, 164, 164);
 }
+
+.voteOk{
+  font-size: xx-large;
+}
+.rateHide{
+  display: none;
+}
+.form-control{
+  width: 200px;
+}
