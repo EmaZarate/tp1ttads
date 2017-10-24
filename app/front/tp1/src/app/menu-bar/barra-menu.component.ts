@@ -47,7 +47,7 @@ gotoDetail(id): void {
  }
 
  goSearchList(movie){
-   this.router.navigate(['/search-list', movie]);
+   this.router.navigate(['/list-movies', movie]);
  }
 
 

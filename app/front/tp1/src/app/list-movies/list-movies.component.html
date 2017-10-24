@@ -1,4 +1,4 @@
-
+<div class="row">
  <h1 [class.playNow]="playNow">Play Now</h1>
  <h1 [class.search]="search">Results</h1>
   <a *ngFor="let movie of movies.results" [routerLink]="['/detail', movie.id]" >
@@ -7,3 +7,4 @@
      <img src="https://image.tmdb.org/t/p/w250_and_h141_bestv2{{movie.poster_path}}" alt="" class="thumbnail">
     </div>
   </a>
+</div>
